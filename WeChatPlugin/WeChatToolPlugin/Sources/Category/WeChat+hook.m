@@ -32,6 +32,15 @@ static char tkRemoteControlWindowControllerKey;     //  远程控制窗口的关
     //      置底
     tk_hookMethod(objc_getClass("MMSessionMgr"), @selector(sortSessions), [self class], @selector(hook_sortSessions));
     
+    
+//    tk_hookMethod(objc_getClass("WeChat"), @selector(updater:didFindValidUpdate:), [self class], @selector(hook_updater:didFindValidUpdate:));
+
+    tk_hookMethod(objc_getClass("WeChat"), @selector(setupCheckUpdateIfNeeded), [self class], @selector(hook_setupCheckUpdateIfNeeded));
+//    tk_hookMethod(objc_getClass("WeChat"), @selector(setupUpdater), [self class], @selector(hook_setupUpdater));
+    
+//    [WeChatApplication reportException:]
+    
+    tk_hookMethod(objc_getClass("WeChatApplication"), @selector(reportException:), [self class], @selector(hook_reportException:));
     [self setup];
     [self replaceAboutFilePathMethod];
 }
@@ -232,7 +241,10 @@ static char tkRemoteControlWindowControllerKey;     //  远程控制窗口的关
     }
     
 }
-
+-(void)hook_reportException:(NSException *)ex{
+    
+    NSLog(@"截获异常发送: %@",ex.description);
+}
 /**
  hook 微信消息同步
  
@@ -469,6 +481,19 @@ static char tkRemoteControlWindowControllerKey;     //  远程控制窗口的关
     } else {
         return cachePath;
     }
+}
+
+- (void)hook_updater:(id)arg1 didFindValidUpdate:(id)arg2{
+    
+    NSLog(@"禁止更新%s",__func__);
+}
+-(void)hook_setupCheckUpdateIfNeeded{
+    
+    NSLog(@"禁止弹出更新提示 %s",__func__);
+}
+-(void)hook_setupUpdater{
+    
+    NSLog(@"禁止弹出更新提示 %s",__func__);
 }
 
 + (id)realFilePathWithOriginFilePath:(NSString *)filePath originKeyword:(NSString *)keyword {

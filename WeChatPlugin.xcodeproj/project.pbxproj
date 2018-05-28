@@ -55,6 +55,7 @@
 		80E5520E1E860B9600EB428F /* time_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 80E552041E860B9600EB428F /* time_icon@2x.png */; };
 		80E552101E860BDC00EB428F /* MMTimeLineMainViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 80E5520F1E860BDC00EB428F /* MMTimeLineMainViewController.h */; };
 		80E552121E860BDC00EB428F /* MMStatusCellDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 80E552111E860BDC00EB428F /* MMStatusCellDelegate.h */; };
+		F81153C52080A4AA000DCB33 /* WeChatApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = F81153C42080A4AA000DCB33 /* WeChatApplication.h */; };
 		F8348B561FBEB9F1006A4FA3 /* TKRemoteControlScript.scpt in Resources */ = {isa = PBXBuildFile; fileRef = F8348B1C1FBEB9F1006A4FA3 /* TKRemoteControlScript.scpt */; };
 		F8348B581FBEB9F1006A4FA3 /* WeChatPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = F8348B1E1FBEB9F1006A4FA3 /* WeChatPlugin.h */; };
 		F8348B591FBEB9F1006A4FA3 /* TKAutoReplyWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = F8348B221FBEB9F1006A4FA3 /* TKAutoReplyWindowController.h */; };
@@ -98,6 +99,8 @@
 		F8348B811FBEB9F1006A4FA3 /* TKRemoteControlCommands.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8348B551FBEB9F1006A4FA3 /* TKRemoteControlCommands.plist */; };
 		F843D9D91FCE923600C284B4 /* NSObject+ObjectMap.m in Sources */ = {isa = PBXBuildFile; fileRef = F843D9D71FCE923600C284B4 /* NSObject+ObjectMap.m */; };
 		F843D9DA1FCE923600C284B4 /* NSObject+ObjectMap.h in Headers */ = {isa = PBXBuildFile; fileRef = F843D9D81FCE923600C284B4 /* NSObject+ObjectMap.h */; };
+		F89ABFC6207EFB8500C89787 /* SnsTimeLineRequest2.m in Sources */ = {isa = PBXBuildFile; fileRef = F89ABFC5207EFB8500C89787 /* SnsTimeLineRequest2.m */; };
+		F89ABFC8207EFCE600C89787 /* SnsTimeLineRequest2.h in Headers */ = {isa = PBXBuildFile; fileRef = F89ABFC7207EFBC700C89787 /* SnsTimeLineRequest2.h */; };
 		F8B637F51E8A571B00ACF4C1 /* MMPreviewViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F8B637F31E8A571B00ACF4C1 /* MMPreviewViewController.h */; };
 		F8B637F61E8A571B00ACF4C1 /* MMPreviewViewPageInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = F8B637F41E8A571B00ACF4C1 /* MMPreviewViewPageInfo.h */; };
 /* End PBXBuildFile section */
@@ -167,6 +170,7 @@
 		80E5520F1E860BDC00EB428F /* MMTimeLineMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTimeLineMainViewController.h; sourceTree = "<group>"; };
 		80E552111E860BDC00EB428F /* MMStatusCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMStatusCellDelegate.h; sourceTree = "<group>"; };
 		F5761F84B0D824761E85E37B /* Pods-WeChatPlugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeChatPlugin.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeChatPlugin/Pods-WeChatPlugin.release.xcconfig"; sourceTree = "<group>"; };
+		F81153C42080A4AA000DCB33 /* WeChatApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatApplication.h; sourceTree = "<group>"; };
 		F8348B1C1FBEB9F1006A4FA3 /* TKRemoteControlScript.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = TKRemoteControlScript.scpt; sourceTree = "<group>"; };
 		F8348B1E1FBEB9F1006A4FA3 /* WeChatPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatPlugin.h; sourceTree = "<group>"; };
 		F8348B221FBEB9F1006A4FA3 /* TKAutoReplyWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKAutoReplyWindowController.h; sourceTree = "<group>"; };
@@ -210,6 +214,8 @@
 		F8348B551FBEB9F1006A4FA3 /* TKRemoteControlCommands.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TKRemoteControlCommands.plist; sourceTree = "<group>"; };
 		F843D9D71FCE923600C284B4 /* NSObject+ObjectMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ObjectMap.m"; sourceTree = "<group>"; };
 		F843D9D81FCE923600C284B4 /* NSObject+ObjectMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ObjectMap.h"; sourceTree = "<group>"; };
+		F89ABFC5207EFB8500C89787 /* SnsTimeLineRequest2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnsTimeLineRequest2.m; sourceTree = "<group>"; };
+		F89ABFC7207EFBC700C89787 /* SnsTimeLineRequest2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnsTimeLineRequest2.h; sourceTree = "<group>"; };
 		F8B637F31E8A571B00ACF4C1 /* MMPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPreviewViewController.h; sourceTree = "<group>"; };
 		F8B637F41E8A571B00ACF4C1 /* MMPreviewViewPageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPreviewViewPageInfo.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -269,6 +275,8 @@
 				803DAFCB1E853D3F00ADCC86 /* WeChatPlugin.m */,
 				F8B637F31E8A571B00ACF4C1 /* MMPreviewViewController.h */,
 				F8B637F41E8A571B00ACF4C1 /* MMPreviewViewPageInfo.h */,
+				F89ABFC7207EFBC700C89787 /* SnsTimeLineRequest2.h */,
+				F89ABFC5207EFB8500C89787 /* SnsTimeLineRequest2.m */,
 				803DAFCD1E853D3F00ADCC86 /* WeChatPluginHeader.h */,
 				80E551F11E8561F600EB428F /* Utility */,
 				80E551EC1E85613300EB428F /* Category */,
@@ -477,6 +485,7 @@
 			children = (
 				F8348B2A1FBEB9F1006A4FA3 /* MMChatsTableCellView+hook.h */,
 				F8348B2B1FBEB9F1006A4FA3 /* WeChat+hook.h */,
+				F81153C42080A4AA000DCB33 /* WeChatApplication.h */,
 				F8348B2C1FBEB9F1006A4FA3 /* WeChat+hook.m */,
 				F8348B2D1FBEB9F1006A4FA3 /* MMChatsTableCellView+hook.m */,
 			);
@@ -607,6 +616,7 @@
 				F8348B5E1FBEB9F1006A4FA3 /* TKRemoteControlWindowController.h in Headers */,
 				F8348B581FBEB9F1006A4FA3 /* WeChatPlugin.h in Headers */,
 				F8348B651FBEB9F1006A4FA3 /* TKHelper.h in Headers */,
+				F89ABFC8207EFCE600C89787 /* SnsTimeLineRequest2.h in Headers */,
 				80E551EF1E85616200EB428F /* NSDate+StatusTimeDescription.h in Headers */,
 				F8348B7D1FBEB9F1006A4FA3 /* TKAutoReplyContentView.h in Headers */,
 				F8348B791FBEB9F1006A4FA3 /* TKRemoteControlController.h in Headers */,
@@ -617,6 +627,7 @@
 				80E551AE1E853FA100EB428F /* MMStatusImageMediaView.h in Headers */,
 				F8348B6A1FBEB9F1006A4FA3 /* TKRemoteControlModel.h in Headers */,
 				80E552101E860BDC00EB428F /* MMTimeLineMainViewController.h in Headers */,
+				F81153C52080A4AA000DCB33 /* WeChatApplication.h in Headers */,
 				80E551F41E85620C00EB428F /* NSString+XMLDictionary.h in Headers */,
 				F8348B591FBEB9F1006A4FA3 /* TKAutoReplyWindowController.h in Headers */,
 				F8348B5F1FBEB9F1006A4FA3 /* MMChatsTableCellView+hook.h in Headers */,
@@ -803,6 +814,7 @@
 				F8348B6C1FBEB9F1006A4FA3 /* TKBaseModel.m in Sources */,
 				80E551AA1E853FA100EB428F /* MMStatusCell.m in Sources */,
 				80E551F01E85616200EB428F /* NSDate+StatusTimeDescription.m in Sources */,
+				F89ABFC6207EFB8500C89787 /* SnsTimeLineRequest2.m in Sources */,
 				F843D9D91FCE923600C284B4 /* NSObject+ObjectMap.m in Sources */,
 				80E551B21E853FA100EB428F /* MMStatusLinkMediaObject.m in Sources */,
 				F8348B731FBEB9F1006A4FA3 /* NSView+Action.m in Sources */,
@@ -950,6 +962,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = WeChatPlugin/PrefixHeader.pch;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = YES;
 				INFOPLIST_FILE = WeChatPlugin/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.corbin.WeChatPlugin;
@@ -970,6 +983,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = WeChatPlugin/PrefixHeader.pch;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = YES;
 				INFOPLIST_FILE = WeChatPlugin/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.corbin.WeChatPlugin;

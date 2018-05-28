@@ -14,7 +14,7 @@
 @interface MMTimeLineMgr : NSObject
 
 @property (nonatomic, weak) id<MMTimeLineMgrDelegate> delegate;
-
+@property (nonatomic, strong) NSString * userName;
 - (void)updateTimeLineHead;
 - (void)updateTimeLineTail;
 

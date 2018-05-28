@@ -372,7 +372,9 @@ __attribute__((visibility("hidden")))
 + (id)sharedInstance;
 - (void)onAuthOK;
 @property(nonatomic) MMChatsViewController *chatsViewController;
-@property(nonatomic) BOOL isAppTerminating;
+@property(nonatomic) BOOL isAppTerminating; 
+- (void)updater:(id)arg1 didFindValidUpdate:(id)arg2;
+- (void)setupUpdater;
 @end
 
 @interface MMViewerWindow : NSWindowController
@@ -1046,6 +1048,18 @@ struct MMCGIItem {
 //- (void)AutoAuth;
 //
 //@end
+
+@interface GetUpdateInfoResponse:NSObject
+- (void)addDownLoadUrl:(id)arg1;
+- (void)addDownLoadUrlFromArray:(id)arg1;
+- (id)mergeFromCodedInputStream:(id)arg1;
+- (int)serializedSize;
+- (void)writeToCodedOutputStream:(id)arg1;
+- (BOOL)isInitialized;
+@property(retain, nonatomic) NSMutableArray *downLoadUrl; // @dynamic downLoadUrl;
+- (id)downLoadUrlList;
+- (id)init;
+@end
 
 @interface AppDelegate : NSObject
 

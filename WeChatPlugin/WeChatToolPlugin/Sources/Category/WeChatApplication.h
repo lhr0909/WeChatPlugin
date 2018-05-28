@@ -14,7 +14,6 @@
 }
 
 @property(nonatomic) __weak NSMenuItem *settingsMenuItem; // @synthesize settingsMenuItem=_settingsMenuItem;
-- (void).cxx_destruct;
 - (void)sendEvent:(id)arg1;
 - (void)showSettingsWindow:(id)arg1;
 - (void)orderFrontStandardAboutPanel:(id)arg1;

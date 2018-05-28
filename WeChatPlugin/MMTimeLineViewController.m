@@ -44,7 +44,16 @@
     btn.layer.backgroundColor = [NSColor blueColor].CGColor;
     btn.frame = NSMakeRect(self.view.bounds.size.width - 100, 20, 80, 50);
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleUserTap:) name:@"tap_userprofile" object:nil];
 }
+-(void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+-(void)handleUserTap:(NSNotification *)notify{
+    NSString * userName = notify.object;
+    self.timeLineMgr.userName = userName;
+}
+
 
 - (void)openAlertPanel:(NSString *)message{
     
@@ -96,7 +105,12 @@
     
     NSString *myFiledFolder = [path.relativePath stringByAppendingFormat:@"/wechatTimeLine"];
     
-    NSString *myFiled = [myFiledFolder stringByAppendingFormat:@"/%.0f.json",[NSDate timeIntervalSinceReferenceDate]];
+    NSString *myFiled;
+    if (self.timeLineMgr.userName) {
+        myFiled = [myFiledFolder stringByAppendingFormat:@"/%@-%.0f.json",self.timeLineMgr.userName,[NSDate timeIntervalSinceReferenceDate]];
+    }else{
+        myFiled = [myFiledFolder stringByAppendingFormat:@"/%.0f.json",[NSDate timeIntervalSinceReferenceDate]];
+    }
     //判断文件是否存在
     BOOL result = [fm fileExistsAtPath:myFiled];
     //如果文件不存在
@@ -129,8 +143,16 @@
     [self.timeLineMgr updateTimeLineHead];
 }
 
--(void)setupContactDetail:(id)sender{
+-(void)setupGroupChatDetail:(id)sender{
+    
+    self.timeLineMgr.userName = nil;
+    [self.timeLineMgr updateTimeLineHead];
+}
+//TODO: 点击了个人头像
+-(void)setupContactDetail:(WCContactData*)sender{
     NSLog(@"%s",__func__);
+    self.timeLineMgr.userName = sender.m_nsUsrName; 
+    [self.timeLineMgr updateTimeLineHead];
 }
 #pragma mark -
 
