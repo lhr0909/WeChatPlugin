@@ -109,7 +109,11 @@
         MMStatusSimple *st = [MMStatusSimple new];
         [st updateWithSnsObject:snsObject];
         NSString * stajson = [st JSONString];
-        jsonstr = [jsonstr stringByAppendingFormat:@"%@,",stajson];
+        jsonstr = [jsonstr stringByAppendingString:stajson];
+        if (stajson && stajson.length > 0 && [response.objectList indexOfObject:snsObject] < response.objectList.count - 1) {
+            // only add comma when stajson is not empty and not last item
+            jsonstr = [jsonstr stringByAppendingString:@","];
+        }
     }
     jsonstr = [jsonstr stringByAppendingFormat:@""];
     NSLog(@"\n\njson:\n%@\n\n",jsonstr);
@@ -152,7 +156,11 @@
         MMStatusSimple *st = [MMStatusSimple new];
         [st updateWithSnsObject:snsObject];
         NSString * stajson = [st JSONString];
-        jsonstr = [jsonstr stringByAppendingFormat:@"%@,",stajson];
+        jsonstr = [jsonstr stringByAppendingString:stajson];
+        if (stajson && stajson.length > 0 && [response.mutableObjectListList indexOfObject:snsObject] < response.mutableObjectListList.count - 1) {
+            // only add comma when stajson is not empty and not last item
+            jsonstr = [jsonstr stringByAppendingString:@","];
+        }
     }
     jsonstr = [jsonstr stringByAppendingFormat:@""];
     NSLog(@"\n\njson:\n%@\n\n",jsonstr);

@@ -700,13 +700,11 @@
 				TargetAttributes = {
 					803DAFBD1E853D3F00ADCC86 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = 32M62TMXC7;
 						ProvisioningStyle = Manual;
 					};
 					803DAFC11E853D3F00ADCC86 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = 32M62TMXC7;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -954,28 +952,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7CBECFB210F0661B4A16F713 /* Pods-WeChatPlugin.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 32M62TMXC7;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = WeChatPlugin/PrefixHeader.pch;
-				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = YES;
-				INFOPLIST_FILE = WeChatPlugin/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.corbin.WeChatPlugin;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		803DAFD71E853D3F00ADCC86 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F5761F84B0D824761E85E37B /* Pods-WeChatPlugin.release.xcconfig */;
-			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -986,8 +964,34 @@
 				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = YES;
 				INFOPLIST_FILE = WeChatPlugin/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.corbin.WeChatPlugin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		803DAFD71E853D3F00ADCC86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5761F84B0D824761E85E37B /* Pods-WeChatPlugin.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WeChatPlugin/PrefixHeader.pch;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = YES;
+				INFOPLIST_FILE = WeChatPlugin/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.corbin.WeChatPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -995,10 +999,10 @@
 		803DAFD91E853D3F00ADCC86 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 32M62TMXC7;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = WeChatPlugin/Info.plist;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
@@ -1011,10 +1015,10 @@
 		803DAFDA1E853D3F00ADCC86 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 32M62TMXC7;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = WeChatPlugin/Info.plist;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
